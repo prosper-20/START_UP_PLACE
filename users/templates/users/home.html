@@ -1,0 +1,9 @@
+{% extends "users/base.html" %}
+{% block content %}
+        {% if request.user.is_authenticated %}
+            <h1>Welcome {user.username} to The Start Up Place</h1>
+        {% else %}
+            <h1>Welcome to The Start Up Place</h1>
+        {% endif %}
+    {% endfor %}
+{% endblock content %}
